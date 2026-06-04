@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+    ;
+}
+:root {
+    /* Texto */
+    --text: #F1F5F9;
+    --text-muted: #94A3B8;
+
+    /* Acentos */
+    --primary: #00E5FF;
+    --secondary: #B14DFF;
+
+    /* Tipografías */
+    --font-title: "Orbitron", sans-serif;
+    --font-text: "Rajdhani", sans-serif;
+
+    /* Fondo */
+    --background: #020617;
+    --surface: #071126;
+    --surface-light: #0B1730;
+}

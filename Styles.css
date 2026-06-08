@@ -9,7 +9,10 @@
     --text-muted: #94A3B8;
 
     /* Acentos */
+    --white:#ffffff;
     --primary: #00E5FF;
+    --middle: #00e5ff80;
+    --middle2: #b14dff80;
     --secondary: #B14DFF;
 
     /* Tipografías */
@@ -84,3 +87,325 @@
   color: var(--primary);
   pointer-events: none;
 }
+
+body{
+    background-color: var(--background);
+    min-height: 100vh;
+}
+
+.card-grid:hover .category-card {
+    filter: brightness(.5) blur(2px);
+    transform: scale(.95);
+}
+.card-grid .category-card:hover {
+    filter: brightness(1);
+    transform: scale(1.08);
+    border: 2px solid transparent;
+
+    background-image:
+        linear-gradient(var(--background),var(--background)),
+        linear-gradient(135deg,var(--primary),var(--secondary));
+
+    background-origin: border-box;
+    background-clip: padding-box,border-box;
+
+    box-shadow:
+        0 0 10px var(--primary),
+        0 0 20px var(--middle),
+        0 0 30px var(--secondary),
+        0 0 40px var(--middle2);
+
+    transform: translateY(-3px);
+
+}
+.category-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .4s ease;
+    width:100%;
+    height:250px;
+    margin:auto;
+}
+.category-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .4s ease;
+}
+
+.category-card:hover img {
+    transform: scale(1.15);
+    
+}
+.title-section{
+    color: var(--text);
+    font-family: var(--font-title);
+}
+.card-content {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+    z-index: 2;
+    left: 0;
+}
+.card-content h3 {
+    font-size: 27px;
+    font-family: var(--font-text);
+    
+}
+.btn-card{
+    background: var(--background);
+
+    border: 2px solid transparent;
+
+    background-image:
+        linear-gradient(var(--background),var(--background)),
+        linear-gradient(135deg,var(--primary),var(--secondary));
+
+    background-origin: border-box;
+    background-clip: padding-box,border-box;
+
+    color: var(--white);
+
+    border-radius: 10px;
+    padding: 5px 15px;
+
+    font-family: var(--font-text);
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.btn-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--middle);
+}
+.card-content a:hover{
+    color: var(--white);
+}
+.category-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        #020617d9,
+        rgba(2, 6, 23, 0.2)
+    );
+
+    z-index: 1;
+    
+}
+
+ .btn-section{
+    background: var(--background);
+
+    border: 2px solid transparent;
+
+    background-image:
+        linear-gradient(var(--background),var(--background)),
+        linear-gradient(135deg,var(--primary),var(--secondary));
+
+    background-origin: border-box;
+    background-clip: padding-box,border-box;
+
+    color: var(--white);
+
+    border-radius: 10px;
+    padding: 10px 20px;
+
+    font-family: var(--font-text);
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.btn-section:hover{
+
+    background: linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color: var(--background);
+    font-family: var(--font-text);
+    font-weight: 500;
+
+    border: 2px solid transparent;
+
+    box-shadow:
+        0 0 10px var(--primary),
+        0 0 20px var(--middle),
+        0 0 30px var(--secondary),
+        0 0 40px var(--middle2);
+
+    transform: translateY(-3px);
+    
+}
+ .btn-cart{
+    background: var(--background);
+
+    border: 2px solid transparent;
+
+    background-image:
+        linear-gradient(var(--background),var(--background)),
+        linear-gradient(135deg,var(--primary),var(--secondary));
+
+    background-origin: border-box;
+    background-clip: padding-box,border-box;
+
+    color: var(--white);
+
+    border-radius: 10px;
+    padding: 5px 10px;
+
+    font-family: var(--font-text);
+    font-size: 20px;
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.btn-cart:hover{
+
+    background: linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color: var(--background);
+    font-family: var(--font-text);
+    font-size: 20px;
+
+    border: 2px solid transparent;
+
+    box-shadow:
+        0 0 10px var(--primary),
+        0 0 20px var(--middle),
+        0 0 30px var(--secondary),
+        0 0 40px var(--middle2);
+
+    
+}
+
+
+
+
+
+
+
+
+
+.product-card a:hover{
+    color: var(--white);
+}
+.product-card{
+    position: relative;
+    background: linear-gradient(
+        135deg,
+        var(--surface),
+        var(--surface-light)
+    );
+    border-radius: 20px;
+    overflow:visible;
+    border: 1px var(--primary) solid;
+    transition: .3s ease;
+}
+.product-image{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+    background: linear-gradient(
+        135deg,
+        var(--middle),
+        var(--surface-light),
+        var(--surface),
+        var(--background)
+
+    );
+}
+
+.product-image img{
+    width: 180px;
+    object-fit: cover;
+    transition: .4s ease;
+}
+.product-card:hover{
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 0 15px var(--primary),
+        0 0 30px var(--middle);
+}
+
+.product-card:hover img{
+    transform:
+
+        scale(1.30);
+
+    filter:
+        drop-shadow(0 0 1px var(--white))
+}
+.product-info{
+    background: linear-gradient(
+        135deg,
+
+        var(--surface-light),
+        var(--surface),
+        var(--background)
+    );
+    padding: 17px;
+    border: 1px var(--primary) solid;
+    border-radius: 0 0 20px 20px;
+
+}
+
+.product-title{
+    color: var(--text);
+    font-family: var(--font-text);
+    font-size: 20px;
+}
+.img-tecl{
+    width: 250px;
+}
+.product-card:hover .img-tecl{
+    transform:
+        scale(1.55);
+
+    filter:
+        drop-shadow(0 0 1px var(--white))
+}
+.product-price{
+    color: var(--primary);
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+}
+.product-rating{
+    color: var(--secondary);
+}
+.produc-stars{
+    color: var(--white);
+}
+.badge-product{
+
+    background: linear-gradient(
+        135deg,
+        #00E5FF,
+        #B14DFF
+    );
+
+    color: var(--background);
+    padding: 2px 4px 2px 4px;
+    border-radius: 10px 0 0 10px;
+}
+

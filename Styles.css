@@ -111,3 +111,16 @@
   padding: 10px 0;
   
 }
+
+
+.title-carousel{
+  font-family: var(--font-title);
+  color: var(--text);
+  text-align: left;
+
+}
+.text-carousel{
+  font-family: var(--font-text);
+  color: var(--secondary);
+}
+

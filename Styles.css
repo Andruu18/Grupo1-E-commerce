@@ -27,6 +27,7 @@
 }
 body{
     background-color: var(--background);
+    min-height: 100vh;
 }
 
 .card-grid:hover .category-card {
@@ -100,7 +101,7 @@ body{
     font-family: var(--font-title);
     
 }
-.card-content button{
+.btn-card{
     background: var(--background);
 
     border: 2px solid transparent;
@@ -124,9 +125,9 @@ body{
     transition: all .3s ease;
 }
 
-.card-content button:hover{
+.btn-card:hover{
     transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(0,229,255,.5);
+    box-shadow: 0 0 15px var(--middle);
 }
 .card-content a:hover{
     color: var(--white);
@@ -137,7 +138,7 @@ body{
     inset: 0;
     background: linear-gradient(
         to top,
-        rgba(2, 6, 23, 0.85),
+        #020617d9,
         rgba(2, 6, 23, 0.2)
     );
 
@@ -145,7 +146,7 @@ body{
     
 }
 
- .btn-card{
+ .btn-section{
     background: var(--background);
 
     border: 2px solid transparent;
@@ -169,7 +170,7 @@ body{
     transition: all .3s ease;
 }
 
-.btn-card:hover{
+.btn-section:hover{
 
     background: linear-gradient(
         135deg,
@@ -190,5 +191,52 @@ body{
         0 0 40px var(--middle2);
 
     transform: translateY(-3px);
+    
+}
+ .btn-cart{
+    background: var(--background);
+
+    border: 2px solid transparent;
+
+    background-image:
+        linear-gradient(var(--background),var(--background)),
+        linear-gradient(135deg,var(--primary),var(--secondary));
+
+    background-origin: border-box;
+    background-clip: padding-box,border-box;
+
+    color: var(--white);
+
+    border-radius: 10px;
+    padding: 5px 10px;
+
+    font-family: var(--font-text);
+    font-size: 20px;
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.btn-cart:hover{
+
+    background: linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color: var(--background);
+    font-family: var(--font-text);
+    font-size: 20px;
+
+    border: 2px solid transparent;
+
+    box-shadow:
+        0 0 10px var(--primary),
+        0 0 20px var(--middle),
+        0 0 30px var(--secondary),
+        0 0 40px var(--middle2);
+
     
 }

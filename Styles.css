@@ -483,3 +483,40 @@ body{
     color: var(--text-muted);
     font-size: 0.9rem;
 }
+
+/* cohete flotando */
+
+.rocket-container {
+    position: relative;
+    display: inline-block;
+}
+
+.footer-logo {
+    width: 250px;
+    max-width: 100%;
+
+    animation: fly 3s ease-in-out infinite;
+}
+/* animacion de vuelo */
+
+@keyframes fly {
+    0% {
+    transform: translateY(0px) rotate(-1deg);
+    }
+
+    25% {
+    transform: translateY(-5px) rotate(1deg);
+    }
+
+    50% {
+    transform: translateY(-12px) rotate(-1deg);
+    }
+
+    75% {
+    transform: translateY(-5px) rotate(1deg);
+    }
+
+    100% {
+    transform: translateY(0px) rotate(-1deg);
+    }
+}

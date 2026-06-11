@@ -409,3 +409,162 @@ body{
     border-radius: 10px 0 0 10px;
 }
 
+/* footer-css */
+
+.footer-CodeSetup {
+    background: var(--background);
+    color: var(--text);
+    padding: 4rem 0 1rem;
+}
+
+.footer-logo {
+    width: 220px;
+    max-width: 80%;
+    margin: 0px;
+}
+
+.footer-brand h3 {
+    color: var(--primary);
+    margin-bottom: 0.8rem;
+}
+
+.footer-brand p {
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.footer-title {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.footer-social,
+.footer-info {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-social {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-social li,
+.footer-info li {
+    margin-bottom: 12px;
+}
+
+.footer-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #cbd5e1;
+    transition: all 0.3s ease;
+}
+
+.footer-social a i {
+    font-size: 1.5rem;
+}
+
+.footer-social a:hover {
+    color: var(--primary);
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* cohete flotando */
+
+.rocket-container {
+    position: relative;
+    display: inline-block;
+}
+
+.footer-logo {
+    width: 250px;
+    max-width: 100%;
+
+    animation: fly 3s ease-in-out infinite;
+}
+/* animacion de vuelo */
+
+@media (max-width: 991.98px) {
+    .navbar {
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .navbar .container-fluid {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .search-container {
+        order: 3;
+        width: 100%;
+        max-width: none;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .navbar .d-flex.align-items-center.gap-3.ms-auto {
+        width: 100%;
+        margin-left: 0 !important;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .title-section {
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .footer-CodeSetup {
+        padding: 3rem 0 1.5rem;
+    }
+
+    .footer-brand,
+    .footer-title,
+    .footer-info {
+        text-align: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}
+
+@keyframes fly {
+    0% {
+    transform: translateY(0px) rotate(-1deg);
+    }
+
+    25% {
+    transform: translateY(-5px) rotate(1deg);
+    }
+
+    50% {
+    transform: translateY(-12px) rotate(-1deg);
+    }
+
+    75% {
+    transform: translateY(-5px) rotate(1deg);
+    }
+
+    100% {
+    transform: translateY(0px) rotate(-1deg);
+    }
+}

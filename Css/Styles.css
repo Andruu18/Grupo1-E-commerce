@@ -628,6 +628,58 @@ body{
     border-radius: 10px 0 0 10px;
 }
 
+/* Publicidad RollingCode */
+
+.ad-rolling {
+    border: 1px solid rgba(0, 229, 255, 0.2);
+    min-height: 160px;
+}
+
+.ad-rolling-bg {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(to right, rgba(2, 6, 23, 0.75) 40%, rgba(2, 6, 23, 0) 100%),
+        url("./assets/imagen-publicidad.png");
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.ad-rolling-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(7, 17, 38, 0.65) 0%,
+        rgba(7, 17, 38, 0.25) 45%,
+        rgba(7, 17, 38, 0) 100%
+    );
+    z-index: 1;
+}
+
+.ad-rolling-badge {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    z-index: 10;
+    font-size: 0.62rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    border: 1px solid rgba(148, 163, 184, 0.3);
+    border-radius: 20px;
+    padding: 1px 8px;
+    font-family: var(--font-text);
+    background: rgba(2, 6, 23, 0.8);
+}
+
+.ad-rolling-logo {
+    width: 180px;
+    max-width: 100%;
+    height: auto;
+    filter: brightness(0) invert(1);
+}
 /* footer-css */
 
 .footer-CodeSetup {

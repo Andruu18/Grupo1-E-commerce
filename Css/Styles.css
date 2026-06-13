@@ -640,7 +640,7 @@ body{
     inset: 0;
     background-image:
         linear-gradient(to right, rgba(2, 6, 23, 0.75) 40%, rgba(2, 6, 23, 0) 100%),
-        url("./assets/imagen-publicidad.png");
+        url("../assets/imagen-publicidad.png");
     background-size: cover;
     background-position: center;
     z-index: 0;
@@ -679,6 +679,61 @@ body{
     max-width: 100%;
     height: auto;
     filter: brightness(0) invert(1);
+}
+
+.ad-rolling-label {
+    font-family: var(--font-text);
+    color: var(--text-muted);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.ad-rolling-title {
+    font-family: var(--font-title);
+    font-size: clamp(0.85rem, 2vw, 1rem);
+    color: var(--text);
+    line-height: 1.2;
+}
+
+.ad-rolling-title span {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.ad-rolling-desc {
+    color: var(--text-muted);
+    font-family: var(--font-text);
+    font-size: 0.78rem;
+    line-height: 1.5;
+}
+
+.ad-rolling-link {
+    background: transparent;
+    border: 2px solid transparent;
+    background-image:
+        linear-gradient(var(--background), var(--background)),
+        linear-gradient(135deg, var(--primary), var(--secondary));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    color: var(--text);
+    font-family: var(--font-text);
+    font-size: 0.8rem;
+    padding: 4px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.ad-rolling-link:hover {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: var(--background);
+    box-shadow: 0 0 15px var(--middle);
+    transform: translateY(-2px);
 }
 /* footer-css */
 
@@ -815,6 +870,10 @@ body{
 
     .footer-social {
         justify-content: center;
+    }
+
+    .ad-rolling {
+        display: none;
     }
 }
 

@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Texto */
+  --text: #f1f5f9;
+  --text-muted: #94a3b8;
+
+    /* Acentos */
+    --white:#ffffff;
+    --primary: #00E5FF;
+    --middle: #00e5ff80;
+    --middle2: #b14dff80;
+    --secondary: #B14DFF;
+
+  /* Tipografías */
+  --font-title: "Orbitron", sans-serif;
+  --font-text: "Rajdhani", sans-serif;
+
+  /* Fondo */
+  --background: #020617;
+  --surface: #071126;
+  --surface-light: #0b1730;
+}
+
+body{
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(0,229,255,.15),
+            transparent 40%
+        ),
+
+        radial-gradient(
+            circle at top right,
+            rgba(177,77,255,.15),
+            transparent 40%
+        ),
+
+        linear-gradient(
+            180deg,
+            #020617,
+            #071126
+        );
+
+    background-color: var(--background);
+}
+.btn-card{
+    background: var(--background);
+
+    border: 2px solid transparent;
+
+    background-image:
+        linear-gradient(var(--background),var(--background)),
+        linear-gradient(135deg,var(--primary),var(--secondary));
+
+    background-origin: border-box;
+    background-clip: padding-box,border-box;
+
+    color: var(--white);
+
+    border-radius: 10px;
+    padding: 5px 15px;
+
+    font-family: var(--font-text);
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.btn-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--middle);
+}
+.error-404{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.error-code{
+    font-family: var(--font-title);
+
+    font-size: 8rem;
+
+    color: var(--primary);
+
+    text-shadow:
+        0 0 10px var(--primary),
+        0 0 25px var(--primary);
+
+    margin-bottom: .5rem;
+}
+
+.error-title{
+    color: var(--text);
+
+    font-family: var(--font-title);
+}
+
+.error-image img{
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.error-text{
+    max-width: 600px;
+
+    color: var(--white);
+
+    font-family: var(--font-text);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.btn-home{
+    text-decoration: none;
+
+    padding: 12px 25px;
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color: var(--background);
+
+    font-family: var(--font-text);
+    font-weight: 700;
+
+    transition: .3s ease;
+}
+
+.btn-home:hover{
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 0 15px var(--primary),
+        0 0 30px var(--secondary);
+}

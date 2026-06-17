@@ -90,24 +90,20 @@
 
       <div class="container1">
         <div class="container2">
-          <form class="formulario">
-            <label for="nombreyapellido">Nombre y Apellido</label>
+          <form class="formulario" action="#">
+            <label for="nombre">Nombre</label>
             <input
-              id="nombreyapellido"
+              id="nombre"
               type="text"
-              placeholder="Juan Pérez"
-              pattern="/^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]{1,24}[\s]*)+$/"
-              title="Solo letras mayúsculas y minúsculas"
+              placeholder="Juan"
               required
             />
 
-            <label for="nombredeusuario">Nombre de Usuario</label>
+            <label for="apellido">Apellido</label>
             <input
-              id="nombredeusuario"
+              id="apellido"
               type="text"
-              placeholder="juanperez123"
-              pattern="/^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]{1,24}[\s]*)+$/"
-              title="Solo letras mayúsculas y minúsculas"
+              placeholder="Perez"
               required
             />
 
@@ -126,8 +122,6 @@
               name=""
               id="telefono"
               placeholder="3811234567"
-              pattern="[0-9]{8-15}"
-              title="Debe tener entre 8 a 15 caracteres"
               required
             />
 
@@ -144,7 +138,6 @@
               type="text"
               id="codigopostal"
               placeholder="4107"
-              maxlength="4"
               required
             />
 
@@ -154,15 +147,13 @@
               name=""
               id="contraseña"
               placeholder="********"
-              pattern="(?=.*[A-Z])(?=.*[0-9]).{8,}"
-              title="Debe tener al menos 8 caracteres, una mayúscula y un número"
-              minlength="8"
               required
             />
 
             <br />
 
-            <button class="button-register" type="submit">Crear Cuenta</button>
+            <input class="button-register" type="submit" value="Registrarse"/>
+           
           </form>
         </div>
       </div>

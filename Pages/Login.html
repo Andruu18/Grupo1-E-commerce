@@ -90,14 +90,17 @@
 
         </div>
         <div class="form-login">
+          
           <form action="#">
+            <h3 class="title-login">Iniciar Sesión</h3>
             <label for="email">Email</label>
-            <input type="email" name="Email" id="email">
+            <input type="email" name="Email" id="email" placeholder="usuario@codesetup.com" required>
             <label for="contraseña">Contraseña</label>
-            <input type="text" class="contraseña">
+            <input type="password" class="contraseña" placeholder="••••••••" required>
+            <a class="text-login" href="#">¿Olvidaste tu contraseña?</a>
+            <input type="submit" value="Ingresar" class="btn-login">
             <a href="https://accounts.google.com/" target="_blank" class="google-login">
-            <input type="submit" value="Ingresar">
-            <i class="bi bi-google"></i>
+            <i class="bi bi-google "></i>
              Iniciar sesión con Google
             </a>
 

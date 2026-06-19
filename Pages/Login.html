@@ -26,10 +26,174 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../Css/Styles.css" />
+    <link rel="stylesheet" href="../Css/Login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg px-0">
+      <div class="container-fluid px-0">
+        <a class="navbar-brand px-2" href="/Index.html">
+          <img src="../assets/logo.png" alt="Logo" width="180" />
+        </a>
 
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+        >
+          <i class="bi bi-list fs-1" style="color: #00e5ff"></i>
+        </button>
+
+        <div class="collapse navbar-collapse w-100 px-2" id="navbarContent">
+          <div
+            class="d-flex flex-column flex-lg-row justify-content-start justify-content-lg-between align-items-start align-items-lg-center w-100"
+          >
+            <div class="position-relative search-container w-100 my-2 my-lg-0">
+              <input
+                type="search"
+                class="form-control search-input ps-5 w-100"
+                placeholder="Buscar"
+              />
+              <i class="bi bi-search search-icon"></i>
+            </div>
+
+            <div
+              class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-2 gap-lg-4 mx-lg-4"
+            >
+              <a class="about-us" href="/Index.html">Inicio</a>
+              <a class="about-us" href="#">Productos</a>
+              <a class="about-us" href="#">Categoría</a>
+              <a class="contact" href="./Contact.html">Contacto</a>
+              <a class="about-us" href="./About-us.html">Nosotros</a>
+
+              <a class="btn btn-outline-custom" href="./Login.html">Ingresar</a>
+              <a class="btn btn-outline-custom" href="./Register.html"
+                >Registrarse</a
+              >
+              <a class="btn btn-outline-custom" href="./Cart.html">
+                <i class="bi bi-cart4"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="login">
+      <div class="container-login">
+        <div class="img-login">
+          <img
+            class="img-setup-login"
+            src="../Assets/imagen-login.png"
+            alt=""
+          />
+        </div>
+        <div class="form-login">
+          <form action="#">
+            <h3 class="title-login">Iniciar Sesión</h3>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="Email"
+              id="email"
+              title="Por favor ingrese su email."
+              placeholder="usuario@codesetup.com"
+              required
+            />
+            <label for="contraseña">Contraseña</label>
+            <input
+              type="password"
+              id="contraseña"
+              placeholder="••••••••"
+              pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}"
+              title="Debe tener al menos 8 caracteres, una mayúscula, una minúscula y un número"
+              required
+            />
+            <a class="text-login" href="./404.html"
+              >¿Olvidaste tu contraseña?</a
+            >
+            <input type="submit" value="Ingresar" class="btn-login" />
+            <a href="404.html" target="_blank" class="google-login">
+              <i class="bi bi-google"></i>
+              Iniciar sesión con Google
+            </a>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-CodeSetup">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="footer-brand">
+              <div class="rocket-container">
+                <img
+                  src="../assets/logo.png"
+                  alt="CodeSetup"
+                  class="footer-logo"
+                />
+              </div>
+              <h3>CodeSetup</h3>
+
+              <p>
+                Tu tienda de tecnología y setups gaming. Equipamiento premium
+                para programadores, gamers y creadores de contenido.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <h4 class="footer-title mb-lg-5">Redes Sociales</h4>
+            <ul class="footer-social">
+              <li>
+                <a href="#">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="bi bi-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-twitch"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <h4 class="footer-title">Información</h4>
+
+            <ul class="footer-info gab-lg-4">
+              <li>📍 Gral. José María Paz 576, Tucumán, Argentina</li>
+              <li>📧 contacto@codesetup.com</li>
+              <li>📞 +54 381 555-0000</li>
+              <li>🚀 Setups y Tecnología</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 CodeSetup - Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

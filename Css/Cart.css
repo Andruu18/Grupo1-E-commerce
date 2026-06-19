@@ -191,4 +191,100 @@ body {
         font-size: 1.05rem;
       }
 
-      
+      .qty-control {
+        display: inline-flex;
+        align-items: center;
+        gap: 0;
+        border: 1px solid rgba(0, 229, 255, 0.3);
+        border-radius: 10px;
+        overflow: hidden;
+        background: var(--background);
+      }
+      .qty-btn {
+        background: transparent;
+        border: none;
+        color: var(--primary);
+        width: 32px;
+        height: 32px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: background 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .qty-btn:hover { background: rgba(0, 229, 255, 0.12); }
+      .qty-value {
+        width: 36px;
+        text-align: center;
+        color: var(--text);
+        font-family: var(--font-text);
+        font-size: 1rem;
+        font-weight: 600;
+        border: none;
+        background: transparent;
+        pointer-events: none;
+      }
+
+      /* ── BOTÓN ELIMINAR ── */
+      .btn-remove {
+        background: transparent;
+        border: 1px solid rgba(255, 80, 80, 0.35);
+        color: #ff5050;
+        border-radius: 8px;
+        width: 34px;
+        height: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: 0.25s;
+        font-size: 1rem;
+      }
+      .btn-remove:hover {
+        background: rgba(255, 80, 80, 0.15);
+        border-color: #ff5050;
+        box-shadow: 0 0 10px rgba(255, 80, 80, 0.35);
+      }
+
+      .btn-checkout {
+        width: 100%;
+        padding: 0.75rem;
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        border: none;
+        color: var(--background);
+        font-family: var(--font-title);
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+        font-weight: 700;
+      }
+      .btn-checkout:hover {
+        box-shadow:
+          0 0 15px var(--middle),
+          0 0 30px var(--middle2);
+        transform: translateY(-2px);
+      }
+
+      /* botón seguir comprando */
+      .btn-keep {
+        background: transparent;
+        border: 2px solid var(--primary);
+        color: var(--primary);
+        font-family: var(--font-text);
+        font-size: 0.95rem;
+        border-radius: 10px;
+        padding: 0.5rem 1.2rem;
+        cursor: pointer;
+        transition: 0.3s;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .btn-keep:hover {
+        background: var(--primary);
+        color: var(--surface);
+      }

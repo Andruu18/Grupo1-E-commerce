@@ -117,10 +117,7 @@ section{
   width: 100%;
   height: 100%;
   display: flex;
-  border-top: 2px solid var(--surface-light);
-  border-bottom: 2px solid var(--surface-light);
   
-
 }
 
 .img-login{
@@ -134,16 +131,33 @@ section{
 
 .form-login {
   width: 50%;
-  background-color: var(--surface);
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  background:
+        radial-gradient(
+            circle at top left,
+            rgba(0,229,255,.15),
+            transparent 40%
+        ),
+
+        radial-gradient(
+            circle at top right,
+            rgba(177,77,255,.15),
+            transparent 40%
+        ),
+
+        linear-gradient(
+            180deg,
+            #020617,
+            #071126
+        );
+
+    background-color: var(--background);
 }
 
 form{
     width: 350px;
-
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -155,8 +169,13 @@ form{
   font-family: var(--font-title);
   color: var(--primary);
   text-align: center;
+  transition: all 0.3s ease;
 }
 
+.title-login:hover{
+  color: var(--secondary);
+
+}
 input{
   background-color: transparent;
   border: 3px solid var(--primary);
@@ -176,6 +195,12 @@ input:focus{
 .btn-login{
   font-family: var(--font-title);
   color: var(--secondary);
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover{
+ border-color: var(--secondary);
+  color: var(--primary);
 }
 
 .google-login{
@@ -185,9 +210,33 @@ input:focus{
   padding: 8px;
   text-align: center;
   text-decoration: none;
+  transition: all 0.3s ease;
+}
+.google-login:hover{
+  color: var(--primary);
+  border: 3px solid var(--primary);
 }
 
+@media (max-width: 1024px) {
+  .img-login {
+    display: none;
+  }
 
+  .form-login {
+    width: 100%;
+    padding: 30px 0;
+  }
+
+  form {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  form {
+    width: 60%;
+  }
+}
 
 
 .footer-CodeSetup {

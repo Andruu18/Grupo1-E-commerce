@@ -425,7 +425,7 @@
       </div>
     </div>
 
-    <!-- modal- error al eliminar -->
+    <!-- modal- modificar cantidad -->
      <div
       class="modal fade"
       id="modalCantidad"
@@ -508,6 +508,105 @@
                   href="tel:+543815550000"
                   style="
                     color: var(--primary);
+                    text-decoration: none;
+                    font-weight: 600;
+                  "
+                  >+54 381 555-0000</a
+                >
+              </p>
+            </div>
+            <button
+              type="button"
+              class="btn btn-outline-custom"
+              data-bs-dismiss="modal"
+            >
+              Entendido
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- modal- error al eliminar -->
+    <div
+      class="modal fade"
+      id="modalErrorEliminar"
+      tabindex="-1"
+      aria-labelledby="modalErrorEliminarLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div
+          class="modal-content"
+          style="
+            background: var(--surface);
+            border: 1px solid rgba(255, 80, 80, 0.4);
+            border-radius: 16px;
+          "
+        >
+          <div class="modal-body text-center py-4 px-4">
+            <i
+              class="bi bi-exclamation-triangle"
+              style="
+                font-size: 2.5rem;
+                color: #ff5050;
+                display: block;
+                margin-bottom: 0.8rem;
+              "
+            ></i>
+            <h5
+              style="
+                font-family: var(--font-title);
+                color: var(--text);
+                font-size: 0.9rem;
+                margin-bottom: 0.5rem;
+              "
+            >
+              No pudimos realizar esta gestión
+            </h5>
+            <p
+              style="
+                color: var(--text-muted);
+                font-size: 0.88rem;
+                margin-bottom: 1rem;
+              "
+            >
+              Pónganse en contacto con nosotros para que te ayudemos.
+            </p>
+            <div
+              style="
+                background: rgba(255, 80, 80, 0.06);
+                border: 1px solid rgba(255, 80, 80, 0.2);
+                border-radius: 10px;
+                padding: 0.8rem 1rem;
+                margin-bottom: 1.3rem;
+              "
+            >
+              <p
+                style="margin: 0; font-size: 0.85rem; color: var(--text-muted)"
+              >
+                📧
+                <a
+                  href="mailto:contacto@codesetup.com"
+                  style="
+                    color: #ff5050;
+                    text-decoration: none;
+                    font-weight: 600;
+                  "
+                  >contacto@codesetup.com</a
+                >
+              </p>
+              <p
+                style="
+                  margin: 6px 0 0;
+                  font-size: 0.85rem;
+                  color: var(--text-muted);
+                "
+              >
+                📞
+                <a
+                  href="tel:+543815550000"
+                  style="
+                    color: #ff5050;
                     text-decoration: none;
                     font-weight: 600;
                   "

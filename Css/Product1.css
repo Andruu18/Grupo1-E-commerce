@@ -1,0 +1,481 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Texto */
+  --text: #f1f5f9;
+  --text-muted: #94a3b8;
+
+    /* Acentos */
+    --white:#ffffff;
+    --primary: #00E5FF;
+    --middle: #00e5ff80;
+    --middle2: #b14dff80;
+    --secondary: #B14DFF;
+
+  /* Tipografías */
+  --font-title: "Orbitron", sans-serif;
+  --font-text: "Rajdhani", sans-serif;
+
+  /* Fondo */
+  --background: #020617;
+  --surface: #071126;
+  --surface-light: #0b1730;
+}
+
+.navbar {
+  min-height: 80px;
+  background-color: var(--surface);
+}
+
+.contact {
+  text-decoration: none;
+  color: var(--secondary);
+  font-family: var(--font-text);
+}
+.about-us {
+  text-decoration: none;
+  color: var(--secondary);
+  font-family: var(--font-text);
+}
+
+.btn-outline-custom {
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  transition: 0.3s;
+  font-family: var(--font-text);
+}
+
+.btn-outline-custom:hover {
+  background: var(--primary);
+  color: var(--surface);
+  font-family: var(--font-text);
+}
+
+.search-container {
+  width: 100%;
+  max-width: none;
+  font-family: var(--font-text);
+}
+
+@media (min-width: 992px) {
+  .search-container {
+    width: 35%;
+    max-width: 400px;
+  }
+}
+
+.search-input {
+  background-color: transparent;
+  border: 2px solid var(--secondary);
+  color: var(--text);
+}
+
+.search-input::placeholder {
+  color: var(--text-muted);
+}
+
+.search-input:focus {
+  background-color: transparent;
+  border-color: var(--secondary);
+  box-shadow: none;
+  color: var(--text);
+  outline: none;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: var(--primary);
+  pointer-events: none;
+}
+
+.navbar-toggler {
+  border: none;
+  box-shadow: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.navbar-collapse {
+  background-color: var(--surface);
+  padding: 10px 0;
+}
+
+
+.product-detail{
+    padding: 60px 20px 20px 20px;
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(0,229,255,.15),
+            transparent 40%
+        ),
+
+        radial-gradient(
+            circle at top right,
+            rgba(177,77,255,.15),
+            transparent 40%
+        ),
+
+        linear-gradient(
+            180deg,
+            #020617,
+            #071126
+        );
+
+    background-color: var(--background);
+}
+
+
+.product-info{
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+
+.product-img{
+    width: 50%;
+}
+
+
+.product-img img{
+   width: 550px;
+   height: 450px;
+}
+
+
+
+.product-data{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-data h1{
+    font-family: var(--font-title);
+    font-size: 30px;
+    color: var(--primary);
+}
+
+.Stock{
+    color: var(--primary);
+    font-family: var(--font-title);
+}
+.price{
+    font-family: var(--font-title);
+    font-size: 30px;
+    color: var(--secondary);
+}
+
+.description{
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--text);
+    font-family: var(--font-text);
+}
+
+button{
+    width: 220px;
+    padding: 12px;
+    border: 3px solid var(--primary);
+    background: transparent;
+    color: var(--secondary);
+    border-radius: 8px;
+    transition: 0.3s;
+    font-family: var(--font-title);
+}
+
+button:hover{
+    border: 3px solid var(--secondary);
+    color: var(--primary);
+}
+
+.specs{
+    padding: 40px;
+    background-color: var(--surface);
+}
+
+.specs-table{
+    width: 100%;
+    background-color: var(--surface-light);
+    
+}
+
+.title-specs{
+    font-family: var(--font-title);
+    background-color: var(--surface);
+    color: var(--primary);
+}
+
+tr{
+    border: 3px solid var(--surface);
+    font-family: var(--font-text);
+
+}
+
+th{
+    color: var(--text-muted);
+}
+
+td{
+    color: var(--text-muted);
+}
+
+
+.container-benefits {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--surface-light);
+  color: var(--primary);
+  text-align: center;
+  padding: 10px;
+  gap: 5px;
+}
+
+.icon-benefit {
+  font-size: 20px;
+  color: var(--secondary);
+}
+
+.title-benefit {
+  font-family: var(--font-title);
+  font-size: 10px;
+}
+
+.text-benefit {
+  font-family: var(--font-text);
+  font-size: 8px;
+  line-height: 5px;
+}
+
+@media (min-width: 768px) {
+  .icon-benefit {
+    font-size: 32px;
+  }
+
+  .title-benefit {
+    font-size: 15px;
+  }
+
+  .text-benefit {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+ 
+@media (min-width: 992px) {
+  .icon-benefit {
+    font-size: 40px;
+  }
+
+  .title-benefit {
+    font-size: 18px;
+  }
+
+  .text-benefit {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+
+.comments{
+    padding: 40px;
+    background-color: var(--surface);
+}
+
+.title-comments{
+    color: var(--primary);
+    font-family: var(--font-title);
+}
+
+.comment{
+    border: 2px solid var(--secondary);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    color: var(--text);
+    font-family: var(--font-text);
+}
+
+.footer-CodeSetup {
+    background: var(--background);
+    color: var(--text);
+    padding: 4rem 0 1rem;
+}
+
+.footer-logo {
+    width: 220px;
+    max-width: 80%;
+    margin: 0px;
+}
+
+.footer-brand h3 {
+    color: var(--primary);
+    margin-bottom: 0.8rem;
+    font-family: var(--font-title);
+}
+
+.footer-brand p {
+    color: var(--text-muted);
+    line-height: 1.6;
+    font-family: var(--font-text);
+}
+
+.footer-title {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: var(--font-title);
+}
+
+.footer-social,
+.footer-info {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-social {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-social li,
+.footer-info li {
+    margin-bottom: 12px;
+    font-family: var(--font-text);
+}
+
+.footer-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #cbd5e1;
+    transition: all 0.3s ease;
+}
+
+.footer-social a i {
+    font-size: 1.5rem;
+}
+
+.footer-social a:hover {
+    color: var(--primary);
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--primary);
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+}
+
+/* cohete flotando */
+
+.rocket-container {
+    position: relative;
+    display: inline-block;
+}
+
+.footer-logo {
+    width: 250px;
+    max-width: 100%;
+
+    animation: fly 3s ease-in-out infinite;
+}
+/* animacion de vuelo */
+
+@media (max-width: 991.98px) {
+    .navbar {
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .navbar .container-fluid {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .search-container {
+        order: 3;
+        width: 100%;
+        max-width: none;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .navbar .d-flex.align-items-center.gap-3.ms-auto {
+        width: 100%;
+        margin-left: 0 !important;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .title-section {
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .footer-CodeSetup {
+        padding: 3rem 0 1.5rem;
+    }
+
+    .footer-brand,
+    .footer-title,
+    .footer-info {
+        text-align: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    .ad-rolling {
+        display: none;
+    }
+}
+
+@keyframes fly {
+    0% {
+    transform: translateY(0px) rotate(-1deg);
+    }
+
+    25% {
+    transform: translateY(-5px) rotate(1deg);
+    }
+
+    50% {
+    transform: translateY(-12px) rotate(-1deg);
+    }
+
+    75% {
+    transform: translateY(-5px) rotate(1deg);
+    }
+
+    100% {
+    transform: translateY(0px) rotate(-1deg);
+    }
+}

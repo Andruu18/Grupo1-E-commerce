@@ -87,3 +87,26 @@ body {
   box-shadow: none;
   outline: none;
 }
+
+.page-header {
+        padding: 2.5rem 0 1.5rem;
+        border-bottom: 1px solid rgba(0, 229, 255, 0.15);
+        margin-bottom: 2rem;
+      }
+      .page-header h1 {
+        font-family: var(--font-title);
+        font-size: clamp(1.4rem, 3vw, 2rem);
+        color: var(--primary);
+      }
+      .page-header p {
+        color: var(--text-muted);
+        font-size: 0.9rem;
+        margin-top: 4px;
+      }
+      .breadcrumb-item a {
+        color: var(--primary);
+        text-decoration: none;
+        font-family: var(--font-text);
+      }
+      .breadcrumb-item.active { color: var(--text-muted); }
+      .breadcrumb-item + .breadcrumb-item::before { color: var(--text-muted); }

@@ -288,3 +288,103 @@ body {
         background: var(--primary);
         color: var(--surface);
       }
+
+      /* ── RESUMEN / SIDEBAR ── */
+      .cart-summary {
+        background: linear-gradient(135deg, var(--surface), var(--surface-light));
+        border: 1px solid rgba(0, 229, 255, 0.2);
+        border-radius: 16px;
+        padding: 1.5rem;
+        position: sticky;
+        top: 20px;
+      }
+      .cart-summary h5 {
+        font-family: var(--font-title);
+        font-size: 0.85rem;
+        color: var(--primary);
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        border-bottom: 1px solid rgba(0, 229, 255, 0.15);
+        padding-bottom: 0.8rem;
+        margin-bottom: 1.2rem;
+      }
+      .summary-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.7rem;
+        font-family: var(--font-text);
+        font-size: 1rem;
+      }
+      .summary-row .label { color: var(--text-muted); }
+      .summary-row .value { color: var(--text); font-weight: 600; }
+      .summary-row.shipping .value { color: #4ade80; }
+
+      .summary-divider {
+        border: none;
+        border-top: 1px solid rgba(0, 229, 255, 0.15);
+        margin: 1rem 0;
+      }
+
+      .summary-total {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: var(--font-title);
+        font-size: 1rem;
+        color: var(--primary);
+        margin-bottom: 1.4rem;
+      }
+
+      /* cupón */
+      .coupon-input {
+        background: transparent;
+        border: 1px solid rgba(177, 77, 255, 0.4);
+        color: var(--text);
+        border-radius: 8px 0 0 8px;
+        font-family: var(--font-text);
+        font-size: 0.95rem;
+        padding: 0.4rem 0.8rem;
+      }
+      .coupon-input::placeholder { color: var(--text-muted); }
+      .coupon-input:focus {
+        outline: none;
+        box-shadow: none;
+        border-color: var(--secondary);
+        background: transparent;
+        color: var(--text);
+      }
+      .btn-coupon {
+        background: var(--secondary);
+        border: none;
+        color: var(--white);
+        font-family: var(--font-text);
+        font-weight: 600;
+        border-radius: 0 8px 8px 0;
+        padding: 0.4rem 0.9rem;
+        cursor: pointer;
+        transition: 0.25s;
+      }
+      .btn-coupon:hover { background: #9b30e6; }
+
+      /* botón checkout */
+      .btn-checkout {
+        width: 100%;
+        padding: 0.75rem;
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        border: none;
+        color: var(--background);
+        font-family: var(--font-title);
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+        font-weight: 700;
+      }
+      .btn-checkout:hover {
+        box-shadow:
+          0 0 15px var(--middle),
+          0 0 30px var(--middle2);
+        transform: translateY(-2px);
+      }

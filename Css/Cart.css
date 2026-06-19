@@ -110,3 +110,85 @@ body {
       }
       .breadcrumb-item.active { color: var(--text-muted); }
       .breadcrumb-item + .breadcrumb-item::before { color: var(--text-muted); }
+
+      /* ── TABLA DE PRODUCTOS ── */
+      .cart-table-wrapper {
+        background: linear-gradient(135deg, var(--surface), var(--surface-light));
+        border: 1px solid rgba(0, 229, 255, 0.2);
+        border-radius: 16px;
+        overflow: hidden;
+      }
+
+      .cart-table {
+        background: transparent;
+        color: var(--text);
+      }
+
+      .cart-table thead,
+      .cart-table tbody,
+      .cart-table thead th,
+      .cart-table tbody td {
+        background: transparent;
+      }
+
+      .cart-table thead th {
+        background: rgba(0, 229, 255, 0.07);
+        color: var(--primary);
+        font-family: var(--font-title);
+        font-size: 0.7rem;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        border-bottom: 1px solid rgba(0, 229, 255, 0.15);
+        padding: 1rem 1.2rem;
+        white-space: nowrap;
+      }
+
+      .cart-table tbody td {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 1rem 1.2rem;
+        vertical-align: middle;
+        color: var(--text);
+        font-family: var(--font-text);
+        font-size: 1rem;
+      }
+
+      .cart-table tbody tr:last-child td { border-bottom: none; }
+
+      .cart-table tbody tr:hover {
+        box-shadow: inset 0 0 0 1px var(--middle2);
+      }
+
+      .cart-table tbody tr:hover td {
+        background: rgba(0, 229, 255, 0.04);
+      }
+
+      
+      .cart-product-img {
+        width: 70px;
+        height: 70px;
+        object-fit: contain;
+        background: linear-gradient(135deg, var(--middle), var(--surface-light));
+        border-radius: 10px;
+        padding: 6px;
+        flex-shrink: 0;
+      }
+
+      .cart-product-name {
+        font-size: 1rem;
+        color: var(--text);
+        font-family: var(--font-text);
+        font-weight: 600;
+      }
+      .cart-product-sub {
+        font-size: 0.8rem;
+        color: var(--text-muted);
+      }
+
+      
+      .price-cell {
+        color: var(--primary);
+        font-weight: 700;
+        font-size: 1.05rem;
+      }
+
+      

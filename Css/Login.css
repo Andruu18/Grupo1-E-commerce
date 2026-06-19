@@ -112,15 +112,14 @@
  
 section{
   width: 100%;
-  padding: 40px;
- background-color: var(--background);
 }
 .container-login{
   width: 100%;
-  height: 50%;
+  height: 100%;
   display: flex;
-  border: 3px solid var(--secondary);
-  border-radius: 8px;
+  border-top: 2px solid var(--surface-light);
+  border-bottom: 2px solid var(--surface-light);
+  
 
 }
 
@@ -139,6 +138,7 @@ section{
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 form{
@@ -190,9 +190,6 @@ input:focus{
 
 
 
-
-
-
 .footer-CodeSetup {
     background: var(--background);
     color: var(--text);
@@ -208,11 +205,13 @@ input:focus{
 .footer-brand h3 {
     color: var(--primary);
     margin-bottom: 0.8rem;
+    font-family: var(--font-title);
 }
 
 .footer-brand p {
     color: var(--text-muted);
     line-height: 1.6;
+    font-family: var(--font-text);
 }
 
 .footer-title {
@@ -220,6 +219,7 @@ input:focus{
     margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-family: var(--font-title);
 }
 
 .footer-social,
@@ -237,6 +237,7 @@ input:focus{
 .footer-social li,
 .footer-info li {
     margin-bottom: 12px;
+    font-family: var(--font-text);
 }
 
 .footer-social a {

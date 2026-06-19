@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text: #f1f5f9;
+  --text-muted: #94a3b8;
+  --white: #ffffff;
+  --primary: #00e5ff;
+  --middle: #00e5ff80;
+  --middle2: #b14dff80;
+  --secondary: #b14dff;
+  --font-title: "Orbitron", sans-serif;
+  --font-text: "Rajdhani", sans-serif;
+  --background: #020617;
+  --surface: #071126;
+  --surface-light: #0b1730;
+}
+
+body {
+  background-color: var(--background);
+  min-height: 100vh;
+  color: var(--text);
+  font-family: var(--font-text);
+}
+
+.navbar {
+  min-height: 80px;
+  background-color: var(--surface);
+}
+.about-us,
+.contact {
+  text-decoration: none;
+  color: var(--secondary);
+  font-family: var(--font-text);
+}
+.btn-outline-custom {
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  transition: 0.3s;
+  font-family: var(--font-text);
+}
+.btn-outline-custom:hover {
+  background: var(--primary);
+  color: var(--surface);
+  font-family: var(--font-text);
+}
+
+.search-container {
+  width: 100%;
+  max-width: none;
+  font-family: var(--font-text);
+}
+.search-input {
+  background-color: transparent;
+  border: 2px solid var(--secondary);
+  color: var(--text);
+}
+.search-input::placeholder {
+  color: var(--text-muted);
+}
+.search-input:focus {
+  background-color: transparent;
+  border-color: var(--secondary);
+  box-shadow: none;
+  color: var(--text);
+  outline: none;
+}
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: var(--primary);
+  pointer-events: none;
+}
+
+.navbar-toggler {
+  border: none;
+  box-shadow: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}

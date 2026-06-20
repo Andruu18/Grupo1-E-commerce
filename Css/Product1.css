@@ -112,7 +112,7 @@
 
 
 .product-detail{
-    padding: 60px 20px 20px 20px;
+    padding: 40px 20px;
     background:
         radial-gradient(
             circle at top left,
@@ -167,6 +167,10 @@
     font-family: var(--font-title);
     font-size: 30px;
     color: var(--primary);
+    transition: all 0.3s ease;
+}
+h1:hover{
+    color: var(--secondary);
 }
 
 .Stock{
@@ -260,7 +264,7 @@ span{
 
 input:checked + .color-option{
     transform: scale(1.50);
-    border: 2px solid var(--secondary);
+    border: 2px solid var(--primary);
 }
 
 .specs{
@@ -292,6 +296,79 @@ th{
 
 td{
     color: var(--text-muted);
+}
+
+@media (max-width: 992px){
+
+    .product-info{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #carouselProducto{
+        width: 100%;
+    }
+
+    .product-data{
+        width: 100%;
+    }
+
+    .img-producto{
+        width: 100%;
+        height: 400px;
+    }
+
+    .product-data h1{
+        font-size: 24px;
+    }
+
+    .price{
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 576px){
+
+    .img-producto{
+        height: 300px;
+    }
+
+    .product-data{
+        gap: 15px;
+    }
+
+    .product-data h1{
+        font-size: 20px;
+    }
+
+    .price{
+        font-size: 24px;
+    }
+
+    .description{
+        font-size: 16px;
+    }
+
+    .btn-product{
+        width: 100%;
+    }
+
+    span{
+        font-size: 12px;
+    }
+
+    .delivery-options label{
+        font-size: 12px;
+    }
+
+    h5{
+        font-size: 15px;
+    }
+
+    p{
+        font-size: 12px ;
+    }
 }
 
 

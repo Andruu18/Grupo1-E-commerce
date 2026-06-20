@@ -143,16 +143,17 @@
 }
 
 
-.product-img{
+.img-producto{
+    width: 100%;
+    height: 550px;
+    object-fit: contain;
+    padding: 20px;
+}
+
+#carouselProducto{
     width: 50%;
+
 }
-
-
-.product-img img{
-   width: 550px;
-   height: 450px;
-}
-
 
 
 .product-data{
@@ -185,7 +186,7 @@
     font-family: var(--font-text);
 }
 
-button{
+.btn-product{
     width: 220px;
     padding: 12px;
     border: 3px solid var(--primary);
@@ -196,9 +197,70 @@ button{
     font-family: var(--font-title);
 }
 
-button:hover{
+.btn-product:hover{
     border: 3px solid var(--secondary);
     color: var(--primary);
+}
+
+.delivery-options{
+    display: flex;
+    flex-direction:row;
+    gap: 10px;
+}
+
+.delivery-options label{
+    display: flex;
+    align-items:center;
+    padding-left: 10px;
+    gap: 10px;
+    width: 180px;
+    color: var(--primary);
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 20px;
+    font-family: var(--font-text);
+}
+
+
+.delivery-options input:checked + label{
+    color: var(--secondary);
+}
+
+.product-colors{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.color-option{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.azul{
+    background-color: #0066ff;
+}
+
+.rojo{
+    background-color: #ff2b2b;
+}
+
+span{
+    font-size: 20px;
+    color: var(--primary);
+    font-family: var(--font-text);
+}
+
+input:checked + .color-option{
+    transform: scale(1.50);
+    border: 2px solid var(--secondary);
 }
 
 .specs{

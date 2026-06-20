@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
 :root {
   /* Texto */
   --text: #f1f5f9;
@@ -254,27 +259,70 @@ body {
 @media (max-width: 991.98px) {
     .navbar {
         height: auto;
-        padding: 1rem 0;
+        padding: 0.75rem 0;
+        width: 100%;
+        overflow: hidden;
     }
 
     .navbar .container-fluid {
         flex-wrap: wrap;
-        gap: 1rem;
+        gap: 0.5rem;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    /* El bloque colapsado no debe exceder el ancho de pantalla */
+    .navbar-collapse {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .navbar-collapse > div {
+        width: 100%;
+        max-width: 100%;
     }
 
     .search-container {
         order: 3;
-        width: 100%;
-        max-width: none;
+        width: 100% !important;
+        max-width: 100%;
         margin-left: 0 !important;
         margin-right: 0 !important;
+    }
+
+    .search-input {
+        width: 100% !important;
+    }
+
+    /* Botones y links del nav en mobile */
+    .navbar-collapse .d-flex {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 8px !important;
+        width: 100%;
     }
 
     .navbar .d-flex.align-items-center.gap-3.ms-auto {
         width: 100%;
         margin-left: 0 !important;
-        justify-content: center;
+        justify-content: flex-start;
         flex-wrap: wrap;
+    }
+
+    /* Imágenes, iframes y elementos anchos no deben desbordar */
+    img, iframe, video {
+        max-width: 100%;
+    }
+
+    /* Form card con menos padding en mobile */
+    .form-card {
+        padding: 28px 20px;
+    }
+
+    /* Mapa más compacto */
+    .map-wrapper {
+        height: 260px;
     }
 }
 

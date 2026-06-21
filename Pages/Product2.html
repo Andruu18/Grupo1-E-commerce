@@ -138,24 +138,56 @@
 
           <p class="price">$29.999</p>
 
-          <div class="cantidad-container">
-            <label for="cantidad">Cantidad de packs:</label>
-            <input
-              type="number"
-              id="cantidad"
-              name="cantidad"
-              min="1"
-              value="1"
-            />
-          </div>
-
           <p class="description">
             Transformá tu espacio con un estilo moderno y gamer. Estos paneles
             hexagonales 3D son ideales para colocar detrás de tu PC, TV o
             escritorio y lograr un efecto visual impactante con iluminación LED.
           </p>
 
-          <button class="btn-product">Comprar ahora</button>
+          <div class="container-btn">
+            <a href="./Cart.html" target="_blank" class="btn-product"
+              >Comprar ahora</a
+            >
+
+            <a href="#chat-whatsapp" class="btn-whatsapp">
+              <i class="bi bi-whatsapp"></i>
+              Consultar por WhatsApp
+            </a>
+          </div>
+
+          <div id="chat-whatsapp" class="chat-modal">
+            <div class="chat-header">
+              <h5 class="title-whatsApp">
+                <i class="bi bi-whatsapp"></i>
+                WhatsApp</h5
+              >
+              <a href="#" class="close-chat">
+                <i class="bi bi-x-lg"></i>
+              </a>
+            </div>
+
+            <div class="chat-body">
+              <div class="message">
+                👋 Hola Gamer
+                <br />
+                Cuéntanos qué diseño deseas para tu producto.
+              </div>
+              <textarea
+                class="chat-input"
+                placeholder="Ej: Quiero el diseño RGB en color azul..."
+              ></textarea>
+            </div>
+
+            <div class="chat-footer">
+              <a
+                href="https://wa.me/5493811234567"
+                target="_blank"
+                class="send-btn"
+              >
+                Enviar mensaje
+            </a>
+            </div>
+          </div>
 
           <div class="delivery-options">
             <span>Método de entrega:</span>

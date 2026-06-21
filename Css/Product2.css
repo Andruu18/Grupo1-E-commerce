@@ -161,6 +161,8 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    padding-top: 40px;
 }
 
 .product-data h1{
@@ -190,9 +192,18 @@ h1:hover{
     font-family: var(--font-text);
 }
 
+.container-btn{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
 .btn-product{
     width: 220px;
     padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     border: 3px solid var(--primary);
     background: transparent;
     color: var(--secondary);
@@ -205,6 +216,110 @@ h1:hover{
     border: 3px solid var(--secondary);
     color: var(--primary);
 }
+
+.btn-whatsapp{
+    width: 320px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border:3px solid #25D366;
+    background: transparent;
+    color:#25D366;
+    font-family: var(--font-title);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-whatsapp:hover{
+    border-color: rgb(71, 255, 71);
+    color:rgb(71, 255, 71);
+    box-shadow: 0 0 12px rgba(37, 211, 102, 0.25);
+}
+
+.chat-modal{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    border: 3px solid #25D366;
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: 0.3s ease;
+}
+
+.chat-modal:target{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.chat-header{
+    background:#25D366;
+    color: var(--text);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+.title-whatsApp{
+    color: var(--text);
+}
+.close-chat{
+    color: var(--text);
+    text-decoration: none;
+}
+.chat-body{
+    padding: 15px;
+    background:#0f172a;;
+}
+
+.message{
+    background: #1e293b;
+    color: var(--text);
+    padding: 12px;
+    border-radius: 12px;
+    width: 200px;
+    width: 85%;
+    font-family: var(--font-text);
+}
+
+.chat-input{
+    width: 100%;
+    height: 100px;
+    margin-top: 15px;
+    padding: 12px;
+    background:  #1e293b;
+    color: var(--text);
+    border: 2px solid #25D366;
+    border-radius: 8px;
+    resize: vertical;
+    font-family: var(--font-text);
+    font-size: 15px;
+    outline: none;
+}
+.send-btn{
+    display: block;
+    text-align: center;
+    background: #25D366;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 12px;
+    transition: 0.3s;
+}
+
+.send-btn:hover{
+    background: #1d9c4e;
+}
+
 
 .delivery-options{
     display: flex;
@@ -235,34 +350,6 @@ h1:hover{
 }
 
 
-.cantidad-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8px;
-    
-}
-
-.cantidad-container label{
-    color: var(--primary);
-    font-family: var(--font-title);
-}
-
-#cantidad{
-    width: 50px;
-    padding: 3px;
-    border-radius: 8px;
-    border-color: var(--primary);
-    font-size: 16px;
-    background-color: transparent;
-    color: var(--text);
-    font-family: var(--font-text);
-    outline: none;
-}
-
-#cantidad:hover{
-    border-color: var(--primary);
-}
 
 span{
     font-size: 20px;
@@ -333,6 +420,21 @@ td{
     .price{
         font-size: 28px;
     }
+
+    .container-btn{
+    display: flex;
+    flex-direction:column;
+}
+
+ .btn-product{
+        width: 100%;
+    }
+
+    .btn-whatsapp{
+        width: 100%;
+
+    }
+    
 }
 
 
@@ -362,6 +464,12 @@ td{
         width: 100%;
     }
 
+    .btn-whatsapp{
+        width: 100%;
+
+    }
+    
+
     span{
         font-size: 12px;
     }
@@ -377,6 +485,7 @@ td{
     p{
         font-size: 12px ;
     }
+
 }
 
 

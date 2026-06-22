@@ -12,10 +12,374 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../Css/about-uss.css" />
+    <link rel="stylesheet" href="../Css/about-us.css" />
   </head>
   <body>
 
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg px-0">
+      <div class="container-fluid px-0">
+        <a class="navbar-brand px-2" href="../Index.html">
+          <img src="../assets/logo.png" alt="Logo" width="180" />
+        </a>
+
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+        >
+          <i class="bi bi-list fs-1" style="color: #00e5ff"></i>
+        </button>
+
+        <div class="collapse navbar-collapse w-100 px-2" id="navbarContent">
+          <div
+            class="d-flex flex-column flex-lg-row justify-content-start justify-content-lg-between align-items-start align-items-lg-center w-100"
+          >
+            <div class="position-relative search-container w-100 my-2 my-lg-0">
+              <input
+                type="search"
+                class="form-control search-input ps-5 w-100"
+                placeholder="Buscar"
+              />
+              <i class="bi bi-search search-icon"></i>
+            </div>
+
+            <div
+              class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-2 gap-lg-4 mx-lg-4"
+            >
+              <a class="about-us" href="../Index.html">Inicio</a>
+              <a class="about-us" href="../Pages/404.html">Ofertas</a>
+              <div class="dropdown-center">
+                <button
+                  class="btn btn-category about-us"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categoría
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item about-us" href="../Pages/Category-1.html"
+                      >Periféricos</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item about-us" href="../Pages/404.html"
+                      >Monitores</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item about-us" href="../Pages/404.html"
+                      >Ergonomía</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item about-us" href="../Pages/Category-2.html"
+                      >RGB y Decoración</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item about-us" href="../Pages/404.html"
+                      >Mousepads</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item about-us" href="../Pages/404.html"
+                      >Streaming</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item about-us" href="../Pages/404.html"
+                      >Gadgets</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item about-us" href="../Pages/404.html"
+                      >Accesorios</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <a class="about-us" href="../Pages/Contact.html">Contacto</a>
+              <a class="about-us" href="../Pages/About-us.html">Nosotros</a>
+            </div>
+
+            <div class="d-flex gap-2">
+              <a class="btn btn-section" href="../Pages/Login.html">Ingresar</a>
+              <a class="btn btn-section" href="../Pages/Register.html"
+                >Registrarse</a
+              >
+              <a class="btn btn-section" href="../Pages/Cart.html">
+                <i class="bi bi-cart4"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO / SLOGAN -->
+    <section class="hero-about">
+      <div class="container">
+        <p class="eyebrow">Nuestra historia</p>
+        <h1>El setup perfecto<br>empieza aquí</h1>
+        <p class="slogan">
+          En <strong>CodeSetup</strong> creemos que tu espacio de trabajo refleja quién sos.
+          Desde 2022 curamos los mejores periféricos, monitores y accesorios RGB
+          para que cada escritorio sea una obra de arte funcional.
+        </p>
+      </div>
+    </section>
+
+    <!-- HISTORIA DE LA TIENDA -->
+    <section class="history-section">
+      <div class="container">
+        <h2 class="section-header">Historia de la tienda</h2>
+        <div class="history-card">
+          <span class="history-year-badge">DESDE 2022</span>
+          <p>
+            Todo comenzó en un pequeño departamento de Buenos Aires, donde tres apasionados de la tecnología —
+            <strong>Andrea</strong>, <strong>Leandro</strong>, <strong>Zabdiel</strong> y <strong>Martín</strong> — se frustraban buscando
+            periféricos de calidad sin pagar fortunas en envíos internacionales.
+          </p>
+          <p>
+            La solución fue simple: crear un espacio propio. CodeSetup nació como un proyecto de fin de semana
+            y en menos de seis meses se convirtió en la referencia local para setups gamer y minimalistas.
+            Hoy somos un equipo de ocho personas que comparte una obsesión: que cada producto que vendemos
+            merezca un lugar en tu escritorio.
+          </p>
+          <p>
+            Trabajamos directamente con fabricantes para garantizar stock real, precios justos y una
+            experiencia de compra sin sorpresas. Cada categoría es curada a mano. Cada reseña, verificada.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EQUIPO -->
+    <section class="team-section">
+      <div class="container">
+        <h2 class="section-header">Nuestro equipo</h2>
+        <div class="row g-4 justify-content-center">
+
+          <div class="col-6 col-sm-4 col-md-3">
+            <div class="team-card">
+              <div class="team-avatar-wrap">
+                <div class="team-avatar-placeholder"><i class="bi bi-person-fill"></i></div>
+              </div>
+              <p class="team-name">Andrea Costas</p>
+              <p class="team-role">CEO &amp; Fundadora</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3">
+            <div class="team-card">
+              <div class="team-avatar-wrap">
+                <div class="team-avatar-placeholder"><i class="bi bi-person-fill"></i></div>
+              </div>
+              <p class="team-name">Zabdiel Puma</p>
+              <p class="team-role">CTO &amp; Cofundador</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3">
+            <div class="team-card">
+              <div class="team-avatar-wrap">
+                <div class="team-avatar-placeholder"><i class="bi bi-person-fill"></i></div>
+              </div>
+              <p class="team-name">Martín Linares</p>
+              <p class="team-role">Dir. de Producto</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3">
+            <div class="team-card">
+              <div class="team-avatar-wrap">
+                <div class="team-avatar-placeholder"><i class="bi bi-person-fill"></i></div>
+              </div>
+              <p class="team-name">Leandro Mendez</p>
+              <p class="team-role">Diseño UX/UI</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- MISIÓN, VISIÓN Y VALORES -->
+    <section class="mvv-section">
+      <div class="container">
+        <h2 class="section-header">Misión, Visión y Valores</h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <div class="mvv-card">
+              <div class="mvv-icon"><i class="bi bi-rocket-takeoff-fill"></i></div>
+              <h3 class="mvv-title">Misión</h3>
+              <p class="mvv-text">
+                Acercar a cada persona los productos tecnológicos que necesita para construir el
+                setup de sus sueños, con precios justos, atención real y entregas confiables.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="mvv-card">
+              <div class="mvv-icon"><i class="bi bi-eye-fill"></i></div>
+              <h3 class="mvv-title">Visión</h3>
+              <p class="mvv-text">
+                Ser la plataforma de referencia en Latinoamérica para setups profesionales, gamer
+                y creativos, reconocida por la calidad de su curaduría y la comunidad que la rodea.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="mvv-card">
+              <div class="mvv-icon"><i class="bi bi-shield-check-fill"></i></div>
+              <h3 class="mvv-title">Valores</h3>
+              <ul class="values-list">
+                <li>Calidad sin concesiones</li>
+                <li>Transparencia en cada venta</li>
+                <li>Comunidad antes que conversión</li>
+                <li>Innovación constante</li>
+                <li>Pasión por la tecnología</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="testimonials-section">
+      <div class="container">
+        <h2 class="section-header">Testimonios de clientes</h2>
+        <div class="row g-4">
+
+          <div class="col-12 col-md-4">
+            <div class="testimonial-card">
+              <div class="testimonial-quote">"</div>
+              <p class="testimonial-text">
+                Compré el teclado mecánico y llegó en 48 hs perfectamente embalado.
+                La calidad superó mis expectativas, es exactamente lo que mostraban las fotos.
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">GM</div>
+                <div>
+                  <p class="testimonial-name">Gonzalo M.</p>
+                  <p class="testimonial-stars">★★★★★</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="testimonial-card">
+              <div class="testimonial-quote">"</div>
+              <p class="testimonial-text">
+                Encontré los paneles hexagonales que había buscado meses en otras tiendas.
+                El soporte me ayudó a elegir el tamaño ideal. Totalmente recomendable.
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">SP</div>
+                <div>
+                  <p class="testimonial-name">Sofía P.</p>
+                  <p class="testimonial-stars">★★★★★</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="testimonial-card">
+              <div class="testimonial-quote">"</div>
+              <p class="testimonial-text">
+                Ya hice tres compras y siempre la misma experiencia: rápido, honesto y con
+                productos que se ven tan buenos como se describen. No voy a buscar en otro lado.
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">RV</div>
+                <div>
+                  <p class="testimonial-name">Rodrigo V.</p>
+                  <p class="testimonial-stars">★★★★★</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-CodeSetup">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="footer-brand">
+              <div class="rocket-container">
+                <img
+                  src="../assets/logo.png"
+                  alt="CodeSetup"
+                  class="footer-logo"
+                />
+              </div>
+              <h3>CodeSetup</h3>
+
+              <p>
+                Tu tienda de tecnología y setups gaming. Equipamiento premium
+                para programadores, gamers y creadores de contenido.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <h4 class="footer-title mb-lg-5">Redes Sociales</h4>
+            <ul class="footer-social">
+              <li>
+                <a href="./Pages/404.html">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="./Pages/404.html">
+                  <i class="bi bi-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+              </li>
+              <li>
+                <a href="./Pages/404.html">
+                  <i class="bi bi-twitch"></i>
+                </a>
+              </li>
+              <li>
+                <a href="./Pages/404.html">
+                  <i class="bi bi-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <h4 class="footer-title">Información</h4>
+
+            <ul class="footer-info gab-lg-4">
+              <li>📍 Gral. José María Paz 576, Tucumán, Argentina</li>
+              <li>📧 contacto@codesetup.com</li>
+              <li>📞 +54 381 555-0000</li>
+              <li>🚀 Setups y Tecnología</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 CodeSetup - Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 

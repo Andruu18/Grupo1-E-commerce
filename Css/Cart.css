@@ -45,22 +45,110 @@ body {
 
   background-color: var(--background);
 }
-
 .navbar {
   min-height: 80px;
   background-color: var(--surface);
 }
 
-.contact {
-  text-decoration: none;
-  color: var(--secondary);
-  font-family: var(--font-text);
-}
 .about-us {
   text-decoration: none;
   color: var(--secondary);
   font-family: var(--font-text);
 }
+
+
+.search-container {
+  width: 100%;
+  max-width: none;
+  font-family: var(--font-text);
+}
+
+@media (min-width: 992px) {
+  .search-container {
+    width: 35%;
+    max-width: 400px;
+  }
+}
+
+.navbar-toggler {
+  border: none;
+  box-shadow: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.navbar-collapse {
+  background-color: var(--surface);
+  padding: 10px 0;
+}
+
+.btn-category {
+  padding: 0;
+  color: var(--secondary);
+  font-family: var(--font-text);
+  transition: all 0.5s ease;
+}
+
+.btn-category.show {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border: none;
+  color: var(--background);
+  padding: 3px 10px;
+
+  box-shadow:
+    0 0 10px var(--primary),
+    0 0 20px var(--middle),
+    0 0 30px var(--secondary);
+  transition: all 0.5s ease;  
+}
+
+.dropdown-menu {
+  background: rgba(7, 17, 38, 0.95);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid var(--primary);
+
+  box-shadow:
+    0 0 10px var(--middle),
+    0 0 20px var(--middle2);
+}
+.dropdown-item:hover {
+  background-color: var(--surface);
+}
+
+.about-us {
+  position: relative;
+  color: var(--secondary);
+  transition: 0.3s ease;
+}
+
+.about-us::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+
+  width: 0;
+  height: 2px;
+
+  transform: translateX(-50%);
+
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+
+  transition: 0.3s ease;
+}
+
+.about-us:hover {
+  color: var(--primary);
+}
+
+.about-us:hover::after {
+  width: 100%;
+}
+
 
 .btn-outline-custom {
   background: transparent;
@@ -129,6 +217,47 @@ body {
 .navbar-collapse {
   background-color: var(--surface);
   padding: 10px 0;
+}
+.btn-section {
+  background: var(--background);
+
+  border: 2px solid transparent;
+
+  background-image:
+    linear-gradient(var(--background), var(--background)),
+    linear-gradient(135deg, var(--primary), var(--secondary));
+
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
+  color: var(--white);
+
+  border-radius: 10px;
+  padding: 10px 20px;
+
+  font-family: var(--font-text);
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-section:hover {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+
+  color: var(--background);
+  font-family: var(--font-text);
+  font-weight: 500;
+
+  border: 2px solid transparent;
+
+  box-shadow:
+    0 0 10px var(--primary),
+    0 0 20px var(--middle),
+    0 0 30px var(--secondary),
+    0 0 40px var(--middle2);
+
+  transform: translateY(-3px);
 }
 
 .page-header {
